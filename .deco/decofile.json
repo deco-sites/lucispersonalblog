@@ -329,9 +329,6 @@
     "path": "/blog/:slug",
     "sections": [
       {
-        "__resolveType": "site/sections/Header.tsx"
-      },
-      {
         "__resolveType": "site/sections/BlogPost.tsx",
         "post": {
           "__resolveType": "blog/loaders/BlogPostItem.ts",
