@@ -259,11 +259,9 @@
     "name": "collections/blog/authors/07ae63fcc4c0",
     "__resolveType": "blog/loaders/Author.ts",
     "author": {
-      "name": "Name of the Author",
-      "email": "author@deco.cx",
-      "jobTitle": "Author",
-      "company": "deco.cx",
-      "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e"
+      "name": "Luciano Júnior",
+      "email": "lucis@deco.cx",
+      "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8426/26d58cd7-09c3-4758-9d76-3ecbfb515287"
     }
   },
   "collections/blog/categories/295e9e7730f9": {
@@ -429,5 +427,8 @@
     "theme": {
       "__resolveType": "Neutral"
     }
+  },
+  "Preview site/sections/BlogPost.tsx": {
+    "__resolveType": "site/sections/BlogPost.tsx"
   }
 }
