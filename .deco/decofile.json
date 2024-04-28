@@ -290,30 +290,6 @@
       "slug": "performance"
     }
   },
-  "collections/blog/posts/173aa7daa089": {
-    "name": "collections/blog/posts/173aa7daa089",
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "post": {
-      "authors": [
-        {
-          "name": "Name of the Author",
-          "email": "author@deco.cx"
-        }
-      ],
-      "categories": [
-        {
-          "name": "Customization",
-          "slug": "customization"
-        }
-      ],
-      "content": "<h1>Lorem Ipsum Dolor Sit Tiptap</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Nullam faucibus venenatis quam, ut laoreet nisi fermentum eget.</strong> Sed <em>pellentesque</em> egestas odio, <u>quis viverra nunc gravida non</u>. <s>Integer imperdiet ligula et lectus pharetra porta.</s></p><h2>H2: Maecenas Ultrices Ullamcorper Felis</h2><p>Donec <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.deco.cx/\">pulvinar</a> magna nec mi sodales, in volutpat tortor pretium. Phasellus <code>consequat</code> libero eu ligula aliquet, id ornare metus ultrices.</p><h3>H3: Aenean sed diam ipsum</h3><ul><li><p>Lorem ipsum dolor sit amet</p></li><li><p>Vestibulum ante ipsum primis</p></li><li><p>Proin accumsan porttitor felis</p></li></ul><h3>H3: Ordered List Example</h3><p>1. Praesent elementum ante nec nibh rhoncus 2. Mauris vel tincidunt turpis 3. Donec a volutpat diam</p><h2>Image Time!</h2><p><img src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9\"></p><h2>Blockquote with a Twist</h2><blockquote><p>Fusce finibus mauris vitae eros tincidunt, vitae vulputate neque egestas. Sed in ex ac urna volutpat ornare.</p><p></p></blockquote><p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>",
-      "slug": "lorem-ipsum",
-      "excerpt": "Discover Tiptap's rich formatting options in this whimsical \"lorem ipsum\" inspired blog post.",
-      "title": "Harness the Power of Tiptap: A Lorem Ipsum Inspired Demo",
-      "date": "2024-04-10",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
-    }
-  },
   "collections/blog/posts/1c8bb9f3d71d": {
     "name": "collections/blog/posts/1c8bb9f3d71d",
     "__resolveType": "blog/loaders/Blogpost.ts",
@@ -324,114 +300,18 @@
           "email": "author@deco.cx"
         }
       ],
-      "content": "<p><br><em>We built the web with audacious ambitions: to wire the world, to connect every human mind, to accelerate progress. But, as we advanced, web development got tangled in complexity. What was once straightforward now feels like navigating a maze of frameworks and services, making it harder for new voices and ideas to emerge.</em></p><p></p><p><em>The need to simplify is urgent. Web development shouldn't feel like a boring puzzle. It should be easy and fun. It should be scalable and observable by default. It should be realtime and collaborative. It should give anyone the autonomy to test new ideas and evolve without fear of \"breaking\". And it should just work.</em></p><p></p><p><em>With AI, TypeScript, modern browsers, fast runtimes, and affordable edge infrastructure, the web is ready for a breakthrough. This is an invitation for the contrarians, the doers, the ones eager to make their mark: it’s time to cut through the clutter, to build the simpler tools we deserve. It's time to </em><strong><em>\"get site done.\"</em></strong></p>",
+      "content": "<p><br>O Rio de Janeiro é uma cidade marcante para o forró. Casa de Luiz Gonzaga por quase 20 anos, abrigou também Jackson do Pandeiro, Marinês, Dominguinhos e, com eles, foi palco dos anos de ouro para os ritmos nordestinos. Em 2024, o Rio mantém acesa a chama do forró e eu descobri que ela pode ser ainda muito maior.</p><p>O primeiro forró que assisti, depois de me mudar em 2019, foi num bar em Botafogo. O espaço era pequeno, com ar-condicionado, e me surpreendeu com seu público: o mesmo jovem boêmio e alternativo da Zona Sul carioca. Tirando a zabumbeira, que descobri ser minha conterrânea da Paraíba, toda a banda era do Sudeste.</p><p>Alguns meses se passaram e crescia a vontade de descobrir mais sobre aquele mundo. Mas precisava resolver um defeito de fábrica primeiro: eu não sabia dançar forró. Mesmo tendo escutado em loop o DVD ao vivo de Mastruz com Leite quando criança; aprendido e tocado sanfona na adolescência; eu não sabia o mínimo para conduzir alguém numa dança.</p><p>O primeiro passo, então, foi procurar aulas de forró. Com poucas buscas no Instagram eu descobri que existiam algumas academia de dança e escolhi uma para começar. Fui bem recebido, com a clássica contemplação após dizer de onde sou, e em poucas aulas eu já estava dançando alguma coisa. Porém, eu já estava descobrindo algo fora do meu radar.</p><p>Mesmo nas aulas para iniciante, o casal de professores – cariocas – faziam algumas performances mais \"avançadas\" para animar e deixar a turma engajada. Entretanto, aquilo não parecia muito forró pra mim. Com mais passos e caminhadas que a apresentação de uma quadrilha junina na Pirâmide do Parque do Pavo, aquilo era o Forró Roots – um mix de forró, tango, samba de gafieira e intenções questionáveis. </p><p>A análise sobre o Roots (que não busca se denominar \"raiz\", mas sim homenagear festivais de forró como o Rootstock) é mais complexa do que consigo entregar hoje, mas a primeira grande diferença que senti da cena nordestina para carioca foi que <strong>as academias de dança influenciam fortemente o que é forró </strong>na cidade<strong>.</strong></p><p>Quando levei alguns amigos do Nordeste para um baile (termo bem utilizado pelos dançarinos),  sempre a primeira observação foi: \"Nossa, quantos giros.\". Existe um certo acordo implícito que dançar bem significa fazer vários passos diferentes no salão, o que deixa algumas pessoas desconfortáveis para começar a dançar.</p><p>Eu aprecio o aprimoramento e o estudo da técnica, mas filosoficamente prefiro dançar e difundir o forró das salas de reboco, agarradinho, onde os giros e passos são presentes, mas não ofuscam a simplicidade de uma dança que nasceu pra juntar o povo e trazer alegria.</p><p>Em um dos primeiros bailes que fui, me deparei com outra diferença marcante. Durante as mudanças de bloco, o cantor falou: \"Eu sei que vocês não gostam, mas vamos tocar um xotezinho agora\" e logo foi acompanhado por alguns gritos de \"Não, por favor\" vindo do público. E, claro, veio uma confusão na minha cabeça porque se tem uma coisa que eu não imaginava que divida opiniões era o ritmo de xote.</p><blockquote><p>\"Forró\" tem dois significados principais: o evento/movimento cultural e o ritmo musical. Os 3 principais ritmos do forró são: o xote, o forró e o baião.</p></blockquote><p>Não foi difícil entender o porquê. Devido ao mesmo acordo que dançar bem é fazer passos ornamentados, o xote, por ser mais devagar, inviabiliza dançar esses passos. Destaco que essa resistência não é algo tão forte, e varia dependendo da casa, mas foi interessante descobrir que isso era uma preocupação. Na Paraíba, dificilmente as pessoas pensariam nisso.</p><p>Para situar os não-nordestinos: eu me criei em Campina Grande, PB – terra do Maior São João do Mundo. Fora dos ~3 meses do meio do ano, pouco se fala de forró; pouco se toca de forró; e pouquissímo se dança de forró. Por mais que a maioria dos meus conterrâneos, se perguntados, falem da admiração pela música nordestina, o forró não faz parte do dia-a-dia da cidade. Pelo menos até agora.</p><p>E esta foi minha primeira grande realização: <strong>No Rio, o forró é levado a sério.</strong> As pessoas têm opiniões sobre, se identificam como forrozeiras, e participam de uma cena noturna pulsante. No Rio, <strong>todo dia tem forró</strong>, evidenciado pelo agregador <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/forronorio/\">forronorio</a> que diariamente posta o calendário de bailes.</p><p>Há forrós para todos os gostos e, ao longo dos últimos meses, eu fui visitar cada um deles. Existe um espectro de públicos que envolve idade, classe, e tolerância ao cheiro de maconha. O Democráticos, clube com mais de 100 anos na Lapa, recebe casais e dançarinos experientes no  forró de toda sexta. Já o Havana 59, também na Lapa, atrai um público mais jovem com seu palco aberto à novas bandas e mistura de estilos.</p><p>Como muita coisa no Rio, os bailes começam tarde no geral. 22 horas é quando a banda principal ataca, e o tempo anterior é preenchido por DJs que trazem um vasto repertório, também tocado no intervalo entre os sets. O show acaba entre 1 e 2 da manhã, exceto pelo clássico <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/forrodagloria.rj/?hl=en\">Forró da Glória</a>, que só acaba quando o metrô abre no outro dia.</p><p>Um movimento interessante que descobri é o das rodas de forró. Tal como na roda de samba, o som é comandado por uma mesa de músicos que não trazem repertório pré-estabelecido e recebem artistas novos que engrandecem o show. A roda de <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/forroderabecarj/\">Forró de Rabeca </a>acontece toda quarta-feira no Armazém do Campo e recebe talentosos instrumentistas que tocam <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://open.spotify.com/playlist/14wmh1LUsCG0hX4wTjLgAC?si=8069c916916b4a51\">de Hermeto Pascoal até Buena Vista Social Club.</a></p><p>E, com certeza, o que mais me surpreendeu positivamente nessa jornada foi <strong>a reverência e admiração aos artistas e compositores nordestinos.</strong> Desde a primeira aula de dança, descobri que as playlists estão cheias de Luiz Gonzaga, Ary Lobo, Marinês, Trio Nordestino e diversos outros artistas que passaram despercebidos quando eu estava crescendo. Tive a felicidade de descobrir lindas canções, como <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://youtu.be/WUv6RpTPE5g?si=k24vsPh6NqsmYF7K&amp;t=23\"><em>Desabafo cantada por Júlia Vargas</em></a>.</p><p>Conversando com os músicos e produtores culturais, muitos falam com nostalgia da época que \"o forró bombava\" e consideram que o movimento hoje está menor. Tal como em qualquer estado, a situação não é fácil para os artistas locais – que muito trabalham. Mas, pouco a pouco, novos projetos se iniciam e mais pessoas consomem forró.</p><p>Um dos novos grupos que se destaca é o <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/forrodepife/\">Forró de Pife</a>, que coloca o mesmo pife de Zabé da Loca&nbsp;como instrumento principal e traz um repertório que vai de <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://open.spotify.com/playlist/1wmZlt7Sg5TVevzzBfVaW2?si=6a39247e9e604bd3\">Os 3 do Nordeste até Júlia Mestre</a>, passando pelas músicas autorais da cantora <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/aluluparanhos\">Alulu Paranhos</a>. O combate ao assédio no ambiente da dança é uma das pautas da banda, além de criar um ambiente convidativo para aqueles que não sabem dançar.</p><p>Outros projetos como o <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/bailedalua_/\">Baile da Lua</a>, que une os instrumentais de Sivuca à música argentina, e o <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.instagram.com/piseirodebochado/\">Piseiro Debochado</a>, reforçam como o Rio de Janeiro continua sendo berço criativo para o forró brasileiro. </p><p>falta terminar</p><p>A cidade que tem os braços abertos para o mundo nem sempre abre os braços para quem trabalha com arte, mas enquanto houver espaço pra sonhar e tivermos pessoas compromissadas com nossa cultura, encantaremos. </p>",
       "slug": "why-we-web",
       "date": "2024-04-10",
-      "title": "Why we web",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9",
+      "title": "Reflexões sobre o forró no Rio de Janeiro",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8426/571b6264-74cf-4384-8601-5c554921fd87",
       "categories": [
         {
           "name": "Culture",
           "slug": "culture"
         }
       ],
-      "excerpt": "We believe in a web that is simple, scalable, and collaborative. A web where anyone can test ideas and build without fear. Let's make that vision a reality."
-    }
-  },
-  "collections/blog/posts/4381a46ca720": {
-    "name": "collections/blog/posts/4381a46ca720",
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "post": {
-      "authors": [
-        {
-          "name": "Name of the Author",
-          "email": "author@deco.cx"
-        }
-      ],
-      "categories": [
-        {
-          "name": "Performance",
-          "slug": "performance"
-        }
-      ],
-      "title": " Why Your Website Needs Blazing-Fast Performance",
-      "excerpt": "Discover why website speed is crucial for user experience, SEO, and conversions. Learn key concepts aligned with deco.cx's performance philosophy.",
-      "slug": "website-performance-deco-guide",
-      "content": "<h1>Why Your Website Needs Blazing-Fast Performance: A Guide Inspired by Deco.cx</h1>\n\n<p>In today's fast-paced digital world, a slow-loading website is often a closed tab. Website performance isn't just a nice-to-have, it's a necessity. This guide, drawing inspiration from deco.cx's approach to performance, will explain why.</p>\n\n<h2>User Experience (UX): Don't Keep Visitors Waiting</h2>\n\n<p>People expect websites to load quickly. Studies show that even a one-second delay can lead to decreased satisfaction and higher bounce rates (people leaving your site). Deco.cx focuses on technologies like server-side rendering (SSR) and edge deployment to minimize load times and keep users engaged.</p>\n\n<h2>Search Engine Optimization (SEO): Speed as a Ranking Factor</h2>\n\n<p>Google and other search engines consider site speed when ranking websites.  A faster website can lead to better visibility in search results. Deco.cx's optimizations aim to give your content the best chance to shine in search engines.</p>\n\n<h2>Conversions: Turning Browsers into Customers</h2>\n\n<p>Slow websites hurt conversions. If your site takes too long to load, people are less likely to stick around to complete a purchase, fill out a form, or subscribe to your newsletter. Deco.cx understands this, and its architecture helps you create a seamless experience that encourages action.</p>\n\n<h2>Beyond the Basics: Deco.cx Performance Concepts</h2>\n\n<p>Here's a quick breakdown of terms important to deco.cx's performance philosophy:</p>\n\n<ul>\n  <li><strong>SSR (Server-Side Rendering):</strong>  Pre-renders pages on the server for fast initial loads.</li>\n  <li><strong>Edge Deployment:</strong>  Distributes your site globally, so users get content from servers closer to them.</li>\n  <li><strong>Static Assets:</strong> Optimizing images, scripts, etc., for smaller file sizes.</li>\n</ul>\n\n<h2>Embrace Speed as a Core Value</h2>\n\n<p>Website performance might seem technical, but its effects are clear. By prioritizing speed, like Deco.cx does, you enhance user experience, boost SEO, and drive better results for your business or project.</p>\n",
-      "date": "2024-04-10",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
-    }
-  },
-  "collections/blog/posts/cd26860194af": {
-    "name": "collections/blog/posts/cd26860194af",
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "post": {
-      "authors": [
-        {
-          "name": "Name of the Author",
-          "email": "author@deco.cx"
-        }
-      ],
-      "categories": [
-        {
-          "name": "Customization",
-          "slug": "customization"
-        }
-      ],
-      "title": "Spice Up Your Text: Formatting Options in Deco.cx",
-      "excerpt": "Master bold, italics, strikethrough, underline, and code snippets to give your Deco.cx blog posts emphasis and clarity.",
-      "date": "2024-04-10",
-      "content": "<h1>Spice Up Your Text: Formatting Options in Deco.cx</h1><p>Plain text can get a bit monotonous. Let's add some flair to your Deco.cx blog posts with formatting tools like bold, italics, and more! T</p><p></p><h2>Essential Formatting Options</h2><ul><li><p><strong>Bold:</strong> Makes text stand out for key points.</p></li><li><p><em>Italics:</em> Emphasizes words or phrases.</p></li><li><p><s>Strikethrough:</s> Indicates edits or deleted content.</p></li><li><p>Underline: Use sparingly, as it can be mistaken for links.</p></li><li><p><code>Code Snippets:</code> Formats code blocks clearly.</p></li></ul><h2>How to Format Text in Deco.cx <strong>Highlight the text</strong> you want to format.</h2><ol><li><p><strong>Use the Editor toolbar:</strong> Click the icons for bold, italics, etc.</p></li><li><p><strong>Keyboard Shortcuts:</strong> Learn the shortcuts for power users (e.g., Ctrl+B for bold).</p></li></ol><h2>Formatting in Action: Recipe Example</h2><p>Let's format a recipe excerpt to see the difference:</p><h3>Before:</h3><p>Add 2 cups all-purpose flour, 1 teaspoon salt, and 1 cup warm water to a bowl. Mix until a dough forms.</p><h3>After:</h3><p>Add <strong>2 cups all-purpose flour</strong>, <strong>1 teaspoon salt</strong>, and <strong>1 cup warm water</strong> to a bowl. Mix until a dough forms.</p><h2>Best Practices</h2><ul><li><p><strong>Don't Overdo It:</strong> Too much formatting is distracting.</p></li><li><p><strong>Accessibility:</strong> Use formatting with screen readers in mind (e.g., emphasize with headings before bold).</p></li></ul><h2>Now, Get Writing!</h2><p>Use these formatting options strategically to make your Deco.cx blog posts more engaging and informative!</p>",
-      "slug": "spice-up-text-deco",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
-    }
-  },
-  "collections/blog/posts/dd41f8121185": {
-    "name": "collections/blog/posts/dd41f8121185",
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "post": {
-      "authors": [
-        {
-          "name": "Name of the Author",
-          "email": "author@deco.cx"
-        }
-      ],
-      "categories": [
-        {
-          "name": "Customization",
-          "slug": "customization"
-        }
-      ],
-      "content": "<h1>The Power of Quotes: Enhancing Your Deco.cx Blog Posts</h1><p>Quotes can add a unique dimension to your blog posts. Let's explore when to use them and how to do so effectively within Deco.cx.</p><h2>Why Include Quotes?</h2><ul><li><p><strong>Credibility:</strong> Back up your point with a quote from an expert or source.</p></li><li><p><strong>Different Perspective:</strong> Offer a counterargument or an alternative viewpoint.</p></li><li><p><strong>Emphasis:</strong> Quote a key phrase from your text to make it stand out.</p></li><li><p><strong>Trigger Emotion:</strong> Use a poignant quote to strike an emotional chord with readers.</p></li></ul><h2>Sourcing Quotes</h2><ul><li><p><strong>Accuracy:</strong> Double-check quotes before using them.</p></li><li><p><strong>Relevance:</strong> Ensure quotes directly tie into your topic.</p></li><li><p><strong>Attribution:</strong> Always mention the source (name, role, if relevant).</p></li></ul><h2>Formatting Quotes in Deco.cx</h2><p>Deco.cx likely offers blockquotes or other styling options. You just need to use the <code>&lt;blockquote&gt;</code> tag. </p><h2>Best Practices</h2><ul><li><p><strong>Brevity Matters:</strong> Quote selectively.</p></li><li><p><strong>Provide Context:</strong> Introduce or follow up quotes with your own analysis.</p></li><li><p><strong>Visual Variety (Optional):</strong> Consider using pull-quotes - visually prominent, larger text excerpts within your post.</p></li></ul><h2>Example: A Quote in Action</h2><p>Provide a short excerpt from a hypothetical blog post, demonstrating a well-integrated and formatted quote:</p><blockquote><p>\"A well-chosen quote can add depth and dimension to your writing, making your arguments more persuasive and your ideas more memorable.\" - [Author's Name, Title (if relevant)]</p></blockquote>",
-      "title": "The Power of Quotes: Enhancing Your Deco.cx Blog Posts",
-      "excerpt": "Learn how to use quotes to add credibility, voice, and depth to your writing. Plus, best practices for formatting quotes on Deco.cx.",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9",
-      "date": "2024-04-10",
-      "slug": "power-of-quotes"
-    }
-  },
-  "collections/blog/posts/f726a93ff63e": {
-    "name": "collections/blog/posts/f726a93ff63e",
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "post": {
-      "authors": [
-        {
-          "name": "Name of the Author",
-          "email": "author@deco.cx"
-        }
-      ],
-      "categories": [
-        {
-          "name": "Customization",
-          "slug": "customization"
-        }
-      ],
-      "content": "<h1>The Power of Headings: Structuring Your Deco.cx Blog Posts</h1><p>Headings are like signposts for your blog posts. They guide readers through your content, improve readability, and play a crucial role in how search engines understand your writing. Let's dive into how to use headings effectively in your Deco.cx blog!</p><h2>Why Headings Matter</h2><p>Here's why headings are important:</p><ul><li><p><strong>Organization:</strong> Headings create a clear hierarchy, breaking up your content into digestible sections.</p></li><li><p><strong>Accessibility:</strong> Screen readers rely on headings for navigation, helping users with visual impairments.</p></li><li><p><strong>SEO:</strong> Search engines use headings to understand your content's structure and key topics.</p></li></ul><h2>Heading Levels (H1-H6)</h2><p>HTML provides six levels of headings:</p><ul><li><p><strong>H1 (Most Important):</strong> Typically used for the main title of your blog post.</p></li><li><p><strong>H2:</strong> For major sections of your content.</p></li><li><p><strong>H3-H6:</strong> Use these for sub-sections, with decreasing importance as the numbers increase.</p></li></ul><h2>Using Headings in Deco.cx with Tiptap</h2><p>Tiptap makes it super easy to format headings in your Deco.cx blog posts:</p><ol><li><p><strong>Highlight the text</strong> you want to make a heading.</p></li><li><p><strong>Click the heading dropdown in the Tiptap toolbar.</strong></p></li><li><p><strong>Choose the appropriate heading level</strong> (H1, H2, etc.).</p></li></ol><h2>Best Practices</h2><p>Keep these in mind when using headings:</p><ul><li><p><strong>One H1 Per Post:</strong> Your main blog post title should be your H1.</p></li><li><p><strong>Logical Order:</strong> Use headings in descending order (H2 after H1, H3 after H2, etc.).</p></li><li><p><strong>Keyword Inclusion:</strong> Naturally include relevant keywords in your headings, but don't force it.</p></li></ul><h2>Let's See It in Action!</h2><p>Imagine you're writing a blog post about baking sourdough bread. Here's how your heading structure might look:</p><h1>My Sourdough Baking Journey</h1><h2>Ingredients and Tools</h2><h3>Essential Ingredients</h3><h3>Helpful Baking Tools</h3><h2>The Sourdough Starter</h2><h2>Step-by-Step Baking Guide</h2><p>By using headings properly, you've made your post more reader-friendly and search engine friendly!</p>",
-      "title": "The Power of Headings: Structuring Blog Posts",
-      "excerpt": "Learn how to use headings (H1-H6) to create well-organized, reader-friendly blog posts.",
-      "slug": "headings-deco-blog-structure",
-      "date": "2024-04-10",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+      "excerpt": "A antiga capital do Brasil foi a porta de entrada para artistas nordestinos nos anos 50 e hoje carrega o legado dessa história nos bailes diários de forró"
     }
   },
   "decohub": {
