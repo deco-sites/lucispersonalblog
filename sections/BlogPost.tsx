@@ -112,7 +112,7 @@ function SocialIcons() {
 }
 
 export default function BlogPost({ page }: Props) {
-  const { title, authors, image, date, content } = page?.post || DEFAULT_PROPS;
+  const { title, authors, image, date, content, excerpt } = page?.post || DEFAULT_PROPS;
 
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -124,6 +124,7 @@ export default function BlogPost({ page }: Props) {
     <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-28">
       <div className="w-full flex flex-col gap-12 max-w-3xl lg:mx-auto">
         <h1 className="text-5xl font-bold">{title}</h1>
+        <span className="text-lg">{excerpt}</span>
         <div className="flex items-center gap-4">
           <Image
             className="object-cover w-14 h-14 rounded-full"
@@ -150,44 +151,6 @@ export default function BlogPost({ page }: Props) {
           __html: content,
         }}
       ></div>
-      <div class="flex flex-col gap-10 max-w-3xl w-full mx-auto">
-        <div class="space-y-4">
-          <p class="text-lg font-bold">Share this post</p>
-          <div class="flex flex-col gap-8 md:flex-row justify-between">
-            <SocialIcons />
-            <div class="flex gap-2 text-white text-xs">
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #1
-              </p>
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #2
-              </p>
-              <p class="flex items-center bg-zinc-700 py-2 px-4 rounded-full">
-                Tag #3
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* divider zinc-300 */}
-        <div class="w-full h-px bg-zinc-300"></div>
-        <div className="flex items-center gap-4">
-          <Image
-            className="object-cover w-14 h-14 rounded-full"
-            alt={authors[0]?.name}
-            src={authors[0]?.avatar || ""}
-            width={56}
-            height={56}
-          />
-          <div className="flex flex-col">
-            <p className="font-semibold text-base">
-              {authors[0].name}
-            </p>
-            <p className="text-base">
-              {`${authors[0].jobTitle ?? "Job Title"}, ${authors[0].company || "Company"}`}
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
