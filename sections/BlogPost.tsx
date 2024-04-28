@@ -8,7 +8,7 @@ interface Props {
   page?: BlogPostPage | null;
 }
 
-const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_*]:mb-4 &[_a]:text-red-800";
+const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_*]:mb-4 [&_a]:text-blue-600";
 const HEADING_STYLES =
   "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h3]:text-2xl [&>h3]:my-6 [&>h3]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-base [&>h6]:my-6 [&>h6]:font-bold";
 const CODE_BLOCK_STYLES =
