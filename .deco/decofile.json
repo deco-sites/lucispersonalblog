@@ -138,6 +138,9 @@
   "Preview /sections/Testimonials.tsx": {
     "__resolveType": "site/sections/Testimonials.tsx"
   },
+  "Preview site/sections/BlogPost.tsx": {
+    "__resolveType": "site/sections/BlogPost.tsx"
+  },
   "Preview site/sections/Hero.tsx": {
     "__resolveType": "site/sections/Hero.tsx"
   },
@@ -344,9 +347,6 @@
             "param": "slug"
           }
         }
-      },
-      {
-        "__resolveType": "site/sections/Footer.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx",
@@ -414,6 +414,9 @@
     "global": [
       {
         "__resolveType": "htmx/sections/htmx.tsx"
+      },
+      {
+        "__resolveType": "site/sections/CustomPlausible.tsx"
       }
     ],
     "caching": {
@@ -422,9 +425,15 @@
     "firstByteThresholdMS": false,
     "theme": {
       "__resolveType": "Neutral"
+    },
+    "abTesting": {
+      "replaces": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
     }
   },
-  "Preview site/sections/BlogPost.tsx": {
-    "__resolveType": "site/sections/BlogPost.tsx"
+  "Preview /sections/CustomPlausible.tsx": {
+    "__resolveType": "site/sections/CustomPlausible.tsx"
   }
 }
