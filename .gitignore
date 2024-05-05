@@ -73,9 +73,3 @@ deno.lock
 .config.json
 # Fresh build directory
 _fresh/
-
-
-# Deco files
-
-_docker_deps.ts
-.metadata/changeset.json
