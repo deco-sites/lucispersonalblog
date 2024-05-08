@@ -114,7 +114,7 @@ function SocialIcons() {
 export default function BlogPost({ page }: Props) {
   const { title, authors, image, date, content, excerpt } = page?.post || DEFAULT_PROPS;
 
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date).toLocaleDateString("pt-BR", {
     year: "numeric",
     month: "long",
     day: "numeric",

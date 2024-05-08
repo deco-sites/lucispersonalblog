@@ -257,7 +257,7 @@ export default function BlogPosts({
                 </div>
                 <div class="flex flex-wrap gap-2">
                   <span>{post.date
-                    ? new Date(post.date).toLocaleDateString("en-US", {
+                    ? new Date(post.date).toLocaleDateString("pt-BR", {
                       month: "long",
                       day: "numeric",
                       year: "numeric",
