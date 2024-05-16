@@ -230,7 +230,7 @@ export default function BlogPosts({
           {posts.slice(from, to).map((post) => (
             <a
               href={`/blog/${post.slug}`}
-              class="border border-secondary overflow-hidden rounded-lg"
+              class="border border-secondary overflow-hidden rounded-lg flex flex-col"
             >
               <Image
                 width={380}
@@ -242,9 +242,9 @@ export default function BlogPosts({
                 decoding="async"
                 loading="lazy"
               />
-              <div class="p-6 space-y-4">
+              <div class="p-6 space-y-4 flex flex-col flex-1">
                 <div class="font-semibold">{calculateReadingTime(post.content.split(" ").length)}</div>
-                <div class="space-y-2">
+                <div class="space-y-2 flex-1">
                   <h3 class="text-2xl">{post.title}</h3>
                   <p class="text-base">{post.excerpt}</p>
                 </div>
