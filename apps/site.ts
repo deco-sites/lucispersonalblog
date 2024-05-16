@@ -1,10 +1,15 @@
 import { App, AppContext as AC } from "deco/mod.ts";
 import blog from "apps/blog/mod.ts";
-import website, { Props } from "apps/website/mod.ts";
+import website, { Props as WebsiteProps } from "apps/website/mod.ts";
+import sqlite, { Props as SQLiteProps } from "apps/sqlite/mod.ts";
 
 import manifest, { Manifest } from "../manifest.gen.ts";
 
 type WebsiteApp = ReturnType<typeof website>;
+type BlogApp = ReturnType<typeof blog>
+type SqliteApp = ReturnType<typeof sqlite>
+
+export type Props = WebsiteProps & SQLiteProps;
 
 /**
  * @title Site
@@ -16,6 +21,8 @@ export default function Site(
   state: Props,
 ): App<Manifest, Props, [
   WebsiteApp,
+  BlogApp,
+  SqliteApp
 ]> {
   return {
     state,
@@ -23,6 +30,7 @@ export default function Site(
     dependencies: [
       website(state),
       blog(state),
+      sqlite(state)
     ],
   };
 }
