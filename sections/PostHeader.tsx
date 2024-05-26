@@ -13,7 +13,7 @@ export interface Props {
 
 export default function Header({ linkText = "Home", linkUrl = "/" }: Props) {
   return (
-    <header class="bg-white py-4 px-6 flex justify-between items-center">
+    <header class="container lg:mx-auto lg:py-14 mx-2 py-12 text-sm justify-between items-center">
       <a href={linkUrl} class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
