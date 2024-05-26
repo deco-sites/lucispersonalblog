@@ -48,151 +48,7 @@ function Container({ children }: { children: ComponentChildren }) {
 
 export default function BlogPosts({
   cta = { text: "Show more" },
-  posts = [
-    {
-      slug: "/",
-      title: "Title of blogpost #1",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #2",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #3",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #4",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #5",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #6",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #7",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #8",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #9",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #10",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #11",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #12",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-    {
-      slug: "/",
-      title: "Title of blogpost #13",
-      authors: [{ name: "Name of the author", email: "author@deco.cx" }],
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: DEFAULT_IMAGE,
-      date: "01 Apr 2024",
-      categories: [{ name: "Tag#1", slug: "tag-1" }],
-      content: "Blog Post Content"
-    },
-  ],
+  posts = [],
   pagination: {
     page = 0,
     perPage = 6,
@@ -227,7 +83,7 @@ export default function BlogPosts({
     <ContainerComponent>
       <>
         <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-          {posts.slice(from, to).map((post) => (
+          {posts?.slice(from, to).map((post) => (
             <a
               href={`/blog/${post.slug}`}
               class="border border-secondary overflow-hidden rounded-lg flex flex-col"
@@ -235,7 +91,7 @@ export default function BlogPosts({
               <Image
                 width={380}
                 height={274}
-                class="object-fit w-full"
+                class="object-cover"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={post.image || ""}
                 alt={post.image}
@@ -270,7 +126,7 @@ export default function BlogPosts({
             </a>
           ))}
         </div>
-        {to < posts.length && (
+        {to < (posts?.length || 1000) && (
           <div class="flex justify-center w-full" id={postList}>
             <button
               hx-get={fetchMoreLink}
