@@ -1,1 +1,15 @@
-{"title":"FAQs","__resolveType":"site/sections/Faq.tsx"}
+{
+  "title": "FAQs",
+  "__resolveType": "site/sections/Faq.tsx",
+  "questions": [
+    {
+      "title": "Pergunta 1",
+      "answer": "<p>Resposta</p>"
+    }
+  ],
+  "description": "Descrição da FAQ",
+  "cta": {
+    "text": "Click me",
+    "href": "/"
+  }
+}
