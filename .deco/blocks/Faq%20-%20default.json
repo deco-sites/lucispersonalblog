@@ -1,7 +1,11 @@
 {
-  "title": "FAQs",
+  "title": "Titulo",
   "__resolveType": "site/sections/Faq.tsx",
   "questions": [
+    {
+      "title": "Segunda pergunta",
+      "answer": "<p>asdas</p>"
+    },
     {
       "title": "Pergunta 1",
       "answer": "<p>Resposta</p>"
@@ -10,6 +14,7 @@
   "description": "Descrição da FAQ",
   "cta": {
     "text": "Click me",
-    "href": "/"
+    "href": "/",
+    "outline": false
   }
 }

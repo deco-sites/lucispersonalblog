@@ -1,3 +1,5 @@
+import { ImageWidget as Image } from "apps/admin/widgets.ts";
+
 export interface CTA {
   id?: string;
   href: string;
@@ -13,6 +15,7 @@ export interface Question {
 
 export interface Props {
   title?: string;
+  outraProp?: Image;
   description?: string;
   cta?: CTA;
   questions?: Question[];

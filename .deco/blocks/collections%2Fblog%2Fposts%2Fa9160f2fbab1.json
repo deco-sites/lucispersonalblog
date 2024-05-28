@@ -1,0 +1,27 @@
+{
+  "name": "collections/blog/posts/a9160f2fbab1",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Luciano Júnior",
+        "email": "lucis@deco.cx",
+        "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8426/26d58cd7-09c3-4758-9d76-3ecbfb515287",
+        "jobTitle": "CTO",
+        "company": "deco.cx"
+      }
+    ],
+    "categories": [
+      {
+        "name": "Dicas",
+        "slug": "dicas"
+      }
+    ],
+    "title": "Incentivos antes de qualquer coisa",
+    "excerpt": "Como navegar pelo complexo mundo dos seres humanos que agem como agem?",
+    "date": "2024-05-28",
+    "slug": "pense-nos-incentivos-antes-de-qualquer-coisa",
+    "content": "<p>O caminho para se tornar um indivíduo formidável requer diversas formas de pensar. Modelos mentais funcionam como \"ferramentas\" disponíveis ao seu cérebro para passar por situações e resolver problemas. Alguns modelos serão mais adequados que outros em determinados momentos.</p><p>Charlie Munger, estudioso da natureza humana, gostava de escrever sobre o assunto. Um dos modelos mentais que aprendi com ele foi o <strong>poder dos incentivos.</strong> Analisar as situações através dessa ótica pode ser vantajoso tanto para identificar oportunidades como para criar algo poderoso.</p><blockquote><p>Nunca, jamais, pense em outra coisa quando você deveria estar pensando sobre o poder dos incentivos.</p><p><em>Charlie Munger</em></p></blockquote><p>Nós enxergarmos o mundo através do que acontece. Das ações das outras pessoas e das repercussões dessas ações. Entretanto, quem realmente governa as situações são <strong>os incentivos aplicados ali</strong>. Não apenas a causalidade (o que causou isso?) mas o sistema de custo e recompensa que orienta o comportamento.</p><p>Uma história sobre incentivos é a de uma fábrica de pasta de dente que observou o problema de alguns produtos saírem com a caixa vazia. A empresa contratou uma consultoria que implementou um projeto milionário: cada unidade seria pesada com precisão e, caso identificasse uma caixa vazia, a produção pararia com um alarme para que alguém fosse até a esteira e removesse a embalagem.</p><p>Após o projeto entrar em funcionamento, na primeira semana os dados já mostravam que os produtos com erro de fabricação estavam sendo removidos. Entretanto, após a segunda semana nenhum alarme foi registrado. Ao averiguar a fábrica, observaram que os funcionários, incomodados com os alarmes e a interrupção do processo, colocaram um ventilador ao lado da esteira que automaticamente removia as caixas vazias. </p><p>Incentivos financeiros, em especial, são importantíssimos e regem o mundo moderno. Um dos motivos para as  <em>startups </em>atraírem talento e construirem soluções inovadores são as <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.infomoney.com.br/guias/stock-options/\">Stock Options</a>, que alinham no longo prazo a recompensa pelo trabalho. Criar incentivos que favorecem o sucesso é fundamental para projetos, empresas e até pra sua vida pessoal. </p>",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/8426/f71c8921-618e-44e3-96dc-65b6bc545321"
+  }
+}
