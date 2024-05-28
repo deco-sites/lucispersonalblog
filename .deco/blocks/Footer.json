@@ -1,1 +1,18 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[],"subscribe":{}}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [],
+  "bottomLinks": [],
+  "social": [
+    {
+      "network": "Linkedin",
+      "href": "https://linkedin.com/in/lcnjnr"
+    }
+  ],
+  "subscribe": {},
+  "copyright": "Faça seu blog também.",
+  "madeWith": {
+    "href": "https://deco.cx?ref=lucisblog",
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
+    "label": "Feito na"
+  }
+}

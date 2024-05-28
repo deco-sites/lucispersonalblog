@@ -21,6 +21,9 @@
           "param": "slug"
         }
       }
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
