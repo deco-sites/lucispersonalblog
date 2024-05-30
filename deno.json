@@ -11,7 +11,9 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
-    "daisyui": "npm:daisyui@4.4.19"
+    "daisyui": "npm:daisyui@4.4.19",
+    "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
+    "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2"
   },
   "tasks": {
     "start": "deno task bundle && deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
@@ -26,7 +28,11 @@
     "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
-    "preview": "deno run -A main.ts"
+    "preview": "deno run -A main.ts",
+    "db:setup:deps": "deno cache -r --node-modules-dir npm:drizzle-orm@0.30.10 npm:drizzle-kit@0.21.2 npm:@libsql/client@0.6.0/node",
+    "db:pull:prod": "deno eval --env 'import \"apps/records/scripts/pullProd.ts\"'",
+    "db:generate": "deno run -A --node-modules-dir npm:drizzle-kit@0.21.2 generate",
+    "db:migrate": "deno run -A --node-modules-dir --config=deno.json npm:drizzle-kit@0.21.2 migrate"
   },
   "githooks": {
     "pre-commit": "check"

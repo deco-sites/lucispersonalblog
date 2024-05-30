@@ -150,5 +150,6 @@
   "/.deco/blocks/Preview%20%2Fsections%2FPostHeader.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/PostHeader.tsx"
-  }
+  },
+  "/.deco/blocks/deco-records.json": null
 }
