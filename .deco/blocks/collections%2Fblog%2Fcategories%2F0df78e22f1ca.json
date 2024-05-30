@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/0df78e22f1ca",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Tech",
+    "slug": "tech"
+  }
+}

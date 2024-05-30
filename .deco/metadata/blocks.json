@@ -151,5 +151,13 @@
     "blockType": "sections",
     "__resolveType": "site/sections/PostHeader.tsx"
   },
-  "/.deco/blocks/deco-records.json": null
+  "/.deco/blocks/deco-records.json": null,
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Fd8aaaf64eafa.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fcategories%2F0df78e22f1ca.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Category.ts"
+  }
 }

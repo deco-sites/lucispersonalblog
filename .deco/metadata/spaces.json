@@ -65,17 +65,94 @@
       "name": "Blog",
       "pinned": true,
       "icon": "article",
-      "layout": [
-        {
-          "w": 6,
-          "h": 24
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
         },
-        {
-          "w": 18,
-          "h": 24,
-          "x": 6
-        }
-      ],
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections::Blog::article::Blog::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections::Blog::article::Blog::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections::Blog::article::Blog::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections::Blog%20Items::article::Blog%20Items::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections::Blog%20Items::article::Blog%20Items::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections::Blog%20Items::article::Blog%20Items::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "collections::Blog::article::Blog::%7B%7D": {
           "name": "Blog",
@@ -105,7 +182,65 @@
       "name": "Releases",
       "pinned": true,
       "icon": "rocket",
-      "layout": [],
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "stack",
+            "width": 100,
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "id": "releases::releases::rocket::releases::%7B%7D",
+                "title": "<div class=\"contents text-base-700\" id=\"header-releases::releases::rocket::releases::%7B%7D\" />",
+                "type": "component",
+                "componentName": "component",
+                "componentState": {
+                  "id": "releases::releases::rocket::releases::%7B%7D"
+                },
+                "isClosable": true,
+                "reorderEnabled": true
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "releases::releases::rocket::releases::%7B%7D": {
           "name": "releases",
@@ -2910,32 +3045,6 @@
       }
     },
     {
-      "id": "deco-records",
-      "name": "Records",
-      "pinned": true,
-      "icon": "database",
-      "layout": [],
-      "tabs": {
-        "deco-records::Deco%20Records::database::Deco%20Records::%7B%7D": {
-          "name": "Deco Records",
-          "icon": "database",
-          "render": "function",
-          "viewId": "Deco Records",
-          "id": "deco-records::Deco%20Records::database::Deco%20Records::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "tags": [
-        {
-          "label": "BETA",
-          "color": "positive"
-        }
-      ],
-      "category": "Content"
-    },
-    {
       "id": "/.deco/blocks/Footer.json",
       "name": "Footer",
       "pinned": false,
@@ -3202,6 +3311,284 @@
           }
         }
       }
+    },
+    {
+      "id": "deco-records-space",
+      "name": "Records",
+      "pinned": true,
+      "icon": "database",
+      "layout": [],
+      "tabs": {
+        "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D": {
+          "name": "Deco Records",
+          "icon": "database",
+          "render": "function",
+          "viewId": "Deco Records",
+          "id": "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "tags": [
+        {
+          "label": "BETA",
+          "color": "positive"
+        }
+      ],
+      "category": "Content"
+    },
+    {
+      "id": "collections:collections/blog/posts/d8aaaf64eafa",
+      "name": "Blog / Posts / d8aaaf64eafa",
+      "pinned": false,
+      "icon": "article",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D": {
+          "name": "Blog / Posts / d8aaaf64eafa",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Edit Blog Item",
+          "viewProps": {
+            "spaceId": "{\"path\":[\"post\"],\"filepath\":\"/.deco/blocks/collections%2Fblog%2Fposts%2Fd8aaaf64eafa.json\"}"
+          },
+          "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D": {
+          "name": "Blog Preview",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Blog Preview",
+          "viewProps": {
+            "spaceId": "{\"blockId\":\"collections/blog/posts/d8aaaf64eafa\"}"
+          },
+          "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "collections:collections/blog/categories/0df78e22f1ca",
+      "name": "Blog / Categories / 0df78e22f1ca",
+      "pinned": false,
+      "icon": "article",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20%2F%20Categories%20%2F%200df78e22f1ca::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22category%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fcategories%252F0df78e22f1ca.json%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20%2F%20Categories%20%2F%200df78e22f1ca::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22category%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fcategories%252F0df78e22f1ca.json%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20%2F%20Categories%20%2F%200df78e22f1ca::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22category%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fcategories%252F0df78e22f1ca.json%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fcategories%2F0df78e22f1ca%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fcategories%2F0df78e22f1ca%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fcategories%2F0df78e22f1ca%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20%2F%20Categories%20%2F%200df78e22f1ca::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22category%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fcategories%252F0df78e22f1ca.json%5C%22%7D%22%7D": {
+          "name": "Blog / Categories / 0df78e22f1ca",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Edit Blog Item",
+          "viewProps": {
+            "spaceId": "{\"path\":[\"category\"],\"filepath\":\"/.deco/blocks/collections%2Fblog%2Fcategories%2F0df78e22f1ca.json\"}"
+          },
+          "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20%2F%20Categories%20%2F%200df78e22f1ca::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22category%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fcategories%252F0df78e22f1ca.json%5C%22%7D%22%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fcategories%2F0df78e22f1ca%5C%22%7D%22%7D": {
+          "name": "Blog Preview",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Blog Preview",
+          "viewProps": {
+            "spaceId": "{\"blockId\":\"collections/blog/categories/0df78e22f1ca\"}"
+          },
+          "id": "collections%3Acollections%2Fblog%2Fcategories%2F0df78e22f1ca::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fcategories%2F0df78e22f1ca%5C%22%7D%22%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "collections:d8aaaf64eafa",
+      "name": "Blog / Posts / d8aaaf64eafa",
+      "pinned": false,
+      "icon": "article",
+      "layout": [],
+      "tabs": {}
     }
   ]
 }
