@@ -91,7 +91,7 @@ export default function BlogPosts({
               <Image
                 width={380}
                 height={274}
-                class="object-cover"
+                class="object-cover w-full"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={post.image || ""}
                 alt={post.image}

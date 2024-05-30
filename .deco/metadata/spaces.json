@@ -65,17 +65,94 @@
       "name": "Blog",
       "pinned": true,
       "icon": "article",
-      "layout": [
-        {
-          "w": 6,
-          "h": 24
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
         },
-        {
-          "w": 18,
-          "h": 24,
-          "x": 6
-        }
-      ],
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections::Blog::article::Blog::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections::Blog::article::Blog::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections::Blog::article::Blog::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ],
+                "width": 50
+              },
+              {
+                "type": "stack",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections::Blog%20Items::article::Blog%20Items::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections::Blog%20Items::article::Blog%20Items::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections::Blog%20Items::article::Blog%20Items::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ],
+                "width": 50
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
         "collections::Blog::article::Blog::%7B%7D": {
           "name": "Blog",
@@ -576,14 +653,14 @@
         },
         "content": [
           {
-            "type": "row",
+            "type": "column",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "height": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -604,7 +681,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "height": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -666,28 +743,96 @@
       "name": "Blog / Authors / 07ae63fcc4c0",
       "pinned": false,
       "icon": "article",
-      "layout": [
-        {
-          "i": "collections:07ae63fcc4c0::Blog / Authors / 07ae63fcc4c0:undefined:articleEdit Blog Item{\"spaceId\":\"{\\\"path\\\":[\\\"author\\\"],\\\"filepath\\\":\\\"/.deco/blocks/collections%2Fblog%2Fauthors%2F07ae63fcc4c0.json\\\"}\"}",
-          "w": 12,
-          "h": 24,
-          "x": 0,
-          "y": 0,
-          "moved": false,
-          "static": false
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
         },
-        {
-          "i": "collections:07ae63fcc4c0::Blog Preview:undefined:articleBlog Preview{\"spaceId\":\"{\\\"blockId\\\":\\\"collections/blog/authors/07ae63fcc4c0\\\"}\"}",
-          "w": 12,
-          "h": 24,
-          "x": 12,
-          "y": 0,
-          "moved": false,
-          "static": false
-        }
-      ],
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "column",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "height": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3A07ae63fcc4c0::Blog%20%2F%20Authors%20%2F%2007ae63fcc4c0::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22author%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fauthors%252F07ae63fcc4c0.json%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3A07ae63fcc4c0::Blog%20%2F%20Authors%20%2F%2007ae63fcc4c0::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22author%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fauthors%252F07ae63fcc4c0.json%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3A07ae63fcc4c0::Blog%20%2F%20Authors%20%2F%2007ae63fcc4c0::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22author%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fauthors%252F07ae63fcc4c0.json%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "height": 50,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "collections%3A07ae63fcc4c0::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fauthors%2F07ae63fcc4c0%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3A07ae63fcc4c0::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fauthors%2F07ae63fcc4c0%5C%22%7D%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "collections%3A07ae63fcc4c0::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fauthors%2F07ae63fcc4c0%5C%22%7D%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
       "tabs": {
-        "collections:07ae63fcc4c0::Blog / Authors / 07ae63fcc4c0:undefined:articleEdit Blog Item{\"spaceId\":\"{\\\"path\\\":[\\\"author\\\"],\\\"filepath\\\":\\\"/.deco/blocks/collections%2Fblog%2Fauthors%2F07ae63fcc4c0.json\\\"}\"}": {
+        "collections%3A07ae63fcc4c0::Blog%20%2F%20Authors%20%2F%2007ae63fcc4c0::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22author%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fauthors%252F07ae63fcc4c0.json%5C%22%7D%22%7D": {
           "name": "Blog / Authors / 07ae63fcc4c0",
           "icon": "article",
           "render": "function",
@@ -695,12 +840,12 @@
           "viewProps": {
             "spaceId": "{\"path\":[\"author\"],\"filepath\":\"/.deco/blocks/collections%2Fblog%2Fauthors%2F07ae63fcc4c0.json\"}"
           },
-          "id": "collections:07ae63fcc4c0::Blog / Authors / 07ae63fcc4c0:undefined:articleEdit Blog Item{\"spaceId\":\"{\\\"path\\\":[\\\"author\\\"],\\\"filepath\\\":\\\"/.deco/blocks/collections%2Fblog%2Fauthors%2F07ae63fcc4c0.json\\\"}\"}",
+          "id": "collections%3A07ae63fcc4c0::Blog%20%2F%20Authors%20%2F%2007ae63fcc4c0::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22author%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fauthors%252F07ae63fcc4c0.json%5C%22%7D%22%7D",
           "state": {
             "__signal": null
           }
         },
-        "collections:07ae63fcc4c0::Blog Preview:undefined:articleBlog Preview{\"spaceId\":\"{\\\"blockId\\\":\\\"collections/blog/authors/07ae63fcc4c0\\\"}\"}": {
+        "collections%3A07ae63fcc4c0::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fauthors%2F07ae63fcc4c0%5C%22%7D%22%7D": {
           "name": "Blog Preview",
           "icon": "article",
           "render": "function",
@@ -708,7 +853,7 @@
           "viewProps": {
             "spaceId": "{\"blockId\":\"collections/blog/authors/07ae63fcc4c0\"}"
           },
-          "id": "collections:07ae63fcc4c0::Blog Preview:undefined:articleBlog Preview{\"spaceId\":\"{\\\"blockId\\\":\\\"collections/blog/authors/07ae63fcc4c0\\\"}\"}",
+          "id": "collections%3A07ae63fcc4c0::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fauthors%2F07ae63fcc4c0%5C%22%7D%22%7D",
           "state": {
             "__signal": null
           }
@@ -1098,14 +1243,14 @@
         },
         "content": [
           {
-            "type": "row",
+            "type": "column",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
                 "type": "stack",
-                "width": 45.11363636363636,
+                "width": 100,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1122,11 +1267,11 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "height": 61.4054054054054
               },
               {
                 "type": "stack",
-                "width": 54.88636363636363,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1143,7 +1288,9 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "header": {},
+                "height": 38.5945945945946
               }
             ]
           }
@@ -1923,14 +2070,13 @@
         },
         "content": [
           {
-            "type": "row",
+            "type": "column",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1947,11 +2093,11 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "height": 50
               },
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1968,7 +2114,8 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "height": 50
               }
             ]
           }
@@ -2132,122 +2279,8 @@
       "name": "Blog / Posts / 257f9e092424",
       "pinned": false,
       "icon": "article",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [
-          {
-            "type": "row",
-            "isClosable": true,
-            "reorderEnabled": true,
-            "title": "",
-            "content": [
-              {
-                "type": "stack",
-                "width": 39.950980392156865,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "collections%3A257f9e092424::Blog%20%2F%20Posts%20%2F%20257f9e092424::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F257f9e092424.json%5C%22%7D%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3A257f9e092424::Blog%20%2F%20Posts%20%2F%20257f9e092424::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F257f9e092424.json%5C%22%7D%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "collections%3A257f9e092424::Blog%20%2F%20Posts%20%2F%20257f9e092424::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F257f9e092424.json%5C%22%7D%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 60.049019607843135,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "collections%3A257f9e092424::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F257f9e092424%5C%22%7D%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-collections%3A257f9e092424::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F257f9e092424%5C%22%7D%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "collections%3A257f9e092424::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F257f9e092424%5C%22%7D%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {
-        "collections%3A257f9e092424::Blog%20%2F%20Posts%20%2F%20257f9e092424::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F257f9e092424.json%5C%22%7D%22%7D": {
-          "name": "Blog / Posts / 257f9e092424",
-          "icon": "article",
-          "render": "function",
-          "viewId": "Edit Blog Item",
-          "viewProps": {
-            "spaceId": "{\"path\":[\"post\"],\"filepath\":\"/.deco/blocks/collections%2Fblog%2Fposts%2F257f9e092424.json\"}"
-          },
-          "id": "collections%3A257f9e092424::Blog%20%2F%20Posts%20%2F%20257f9e092424::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F257f9e092424.json%5C%22%7D%22%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "collections%3A257f9e092424::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F257f9e092424%5C%22%7D%22%7D": {
-          "name": "Blog Preview",
-          "icon": "article",
-          "render": "function",
-          "viewId": "Blog Preview",
-          "viewProps": {
-            "spaceId": "{\"blockId\":\"collections/blog/posts/257f9e092424\"}"
-          },
-          "id": "collections%3A257f9e092424::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F257f9e092424%5C%22%7D%22%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      }
+      "layout": [],
+      "tabs": {}
     },
     {
       "id": "/.deco/blocks/Preview%20%2Fsections%2FPostHeader.tsx.json",
@@ -3240,14 +3273,13 @@
         },
         "content": [
           {
-            "type": "row",
+            "type": "column",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3264,11 +3296,11 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "height": 50
               },
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3285,7 +3317,8 @@
                     "isClosable": true,
                     "reorderEnabled": true
                   }
-                ]
+                ],
+                "height": 50
               }
             ]
           }
@@ -3307,7 +3340,8 @@
           },
           "id": "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20%2F%20Posts%20%2F%20d8aaaf64eafa::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252Fd8aaaf64eafa.json%5C%22%7D%22%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "collections%3Acollections%2Fblog%2Fposts%2Fd8aaaf64eafa::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2Fd8aaaf64eafa%5C%22%7D%22%7D": {
