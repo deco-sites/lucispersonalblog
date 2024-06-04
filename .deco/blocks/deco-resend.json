@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/apps/deco/resend.ts",
+  "apiWrite": {},
+  "emailTo": [],
+  "apiKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "RESEND_KEY",
+    "encrypted": "6382895a431874c0036357dd411e7a19434435dacecac14fdf03a5714b2bfcbba7eb416dfc9e0d779e690749fd57e5a1"
+  },
+  "emailFrom": {
+    "name": "Luciano Júnior"
+  }
+}

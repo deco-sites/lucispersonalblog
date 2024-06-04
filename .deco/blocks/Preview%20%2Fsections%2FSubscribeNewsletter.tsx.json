@@ -1,0 +1,7 @@
+{
+  "__resolveType": "site/sections/SubscribeNewsletter.tsx",
+  "title": "Minha Newsletter",
+  "emailPlaceholder": "Digite seu e-mail",
+  "submitButtonText": "Se Inscrever",
+  "description": "Receba notificações de novos posts e outros pensamentos intrusivos"
+}

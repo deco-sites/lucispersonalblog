@@ -1,0 +1,7 @@
+{
+  "__resolveType": "resend/actions/emails/send.ts",
+  "html": "<h1>Olá, obrigado</h1>",
+  "reply_to": "luciannojunior@gmail.com",
+  "to": "luciannojunior@gmail.com",
+  "subject": "Confirma sua inscrição"
+}
