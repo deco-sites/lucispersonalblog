@@ -1,13 +1,12 @@
-import { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
 import { AppContext } from "../apps/site.ts";
 import type { AppContext as RecordsApp } from "site/apps/deco/records.ts";
+import type { AppContext as ResendApp } from "apps/resend/mod.ts";
 import { newsletter } from "../db/schema.ts";
 import { eq } from "drizzle-orm";
 import { useComponent } from "./Component.tsx";
-import { useSection } from "deco/hooks/useSection.ts";
 
 interface Props {
-  submissionResponse: { error?: string };
+  submissionResponse: { error?: string; email: string };
   /**
    * @description The title for the newsletter section.
    */
@@ -33,32 +32,48 @@ interface Props {
 export async function action(
   props: Props,
   req: Request,
-  ctx: AppContext & RecordsApp
+  ctx: AppContext & RecordsApp & ResendApp
 ): Promise<Props> {
   const form = await req.formData();
   const email = `${form.get("email") ?? ""}`;
 
   if (!email) {
-    return { ...props, submissionResponse: {} };
+    return { ...props, submissionResponse: { email: "" } };
   }
 
   const drizzle = await ctx.invoke("records/loaders/drizzle.ts");
 
-  const recs = await drizzle
-    .select({ email: newsletter.email })
-    .from(newsletter)
-    .where(eq(newsletter.email, email));
+  try {
+    const recs = await drizzle
+      .select({ email: newsletter.email })
+      .from(newsletter)
+      .where(eq(newsletter.email, email));
 
-  console.log(recs);
+    if (recs.length) {
+      return {
+        ...props,
+        submissionResponse: { error: "Email já cadastrado.", email },
+      };
+    }
 
-  const rec = await drizzle.insert(newsletter).values({
-    email,
-    confirmed_at: null,
-  });
+    await drizzle.insert(newsletter).values({
+      email,
+      confirmed_at: null,
+    });
 
-  console.log({ rec });
+    await ctx.invoke("resend/actions/emails/send.ts", {
+      text: "Test",
+      to: email,
+    });
 
-  return { ...props, submissionResponse: {} };
+    return { ...props, submissionResponse: { email: "" } };
+  } catch (e) {
+    ctx.monitoring?.logger?.error(e);
+    return {
+      ...props,
+      submissionResponse: { error: "Erro no sistema.", email },
+    };
+  }
 }
 
 export function loader(props: Props) {
@@ -87,13 +102,17 @@ export default function NewsletterSubscriber(props: Props) {
           >
             <input
               type="email"
+              value={submissionResponse?.email}
               class="px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder={emailPlaceholder}
               name="email"
               required
             />
             <button type="submit" class={`btn btn-primary`}>
-              {submitButtonText}
+              <span class="[.htmx-request_&]:hidden inline">
+                {submitButtonText}
+              </span>
+              <span class="[.htmx-request_&]:inline hidden loading loading-spinner loading-xs" />
             </button>
           </form>
         </div>
