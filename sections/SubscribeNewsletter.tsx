@@ -56,18 +56,24 @@ export async function action(
       };
     }
 
+    const confirmationKey = crypto.randomUUID();
+
     await drizzle.insert(newsletter).values({
       email,
       confirmed_at: null,
+      confirmation_key: confirmationKey,
     });
 
     await ctx.invoke("resend/actions/emails/send.ts", {
-      text: "Test",
+      subject: `Lucis - confirme sua inscrição`,
+      from: "no-reply@lucis.dev",
+      html: `<h1>Obrigado!</h1><br/><br/>Clique <a href="https://blog.lucis.dev/confirm-newsletter?key=${confirmationKey}">nesse link</a> para confirmar sua inscrição na minha newsletter.`,
       to: email,
     });
 
     return { ...props, submissionResponse: { email: "" } };
   } catch (e) {
+    console.log(e)
     ctx.monitoring?.logger?.error(e);
     return {
       ...props,

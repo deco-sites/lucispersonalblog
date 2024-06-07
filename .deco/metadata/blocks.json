@@ -185,5 +185,11 @@
   "/.deco/blocks/Preview%20resend%2Factions%2Femails%2Fsend.ts.json": {
     "blockType": "actions",
     "__resolveType": "resend/actions/emails/send.ts"
+  },
+  "/.deco/blocks/pages-Confirm%2520Newsletter-617578.json": {
+    "name": "Confirm Newsletter",
+    "path": "/confirm-newsletter",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

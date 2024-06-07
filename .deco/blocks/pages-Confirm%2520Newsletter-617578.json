@@ -1,0 +1,16 @@
+{
+  "name": "Confirm Newsletter",
+  "path": "/confirm-newsletter",
+  "sections": [
+    {
+      "__resolveType": "Preview /sections/PostHeader.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ConfirmEmail.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
