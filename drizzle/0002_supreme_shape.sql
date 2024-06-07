@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `newsletter_email_unique` ON `newsletter` (`email`);

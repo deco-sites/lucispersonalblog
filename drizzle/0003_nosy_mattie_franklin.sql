@@ -1,0 +1,1 @@
+ALTER TABLE `newsletter` ADD `confirmation_key` text;

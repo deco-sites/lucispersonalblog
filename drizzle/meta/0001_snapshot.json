@@ -1,0 +1,46 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "10ed4a0b-6dd6-4b73-981a-a98eb9431ba3",
+  "prevId": "2dc879f5-1f59-4f25-9119-cdbcb023fae5",
+  "tables": {
+    "newsletter": {
+      "name": "newsletter",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "email": {
+          "name": "email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "confirmed_at": {
+          "name": "confirmed_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {
+      "\"profiles\"": "\"newsletter\""
+    },
+    "columns": {}
+  }
+}

@@ -159,5 +159,37 @@
   "/.deco/blocks/collections%2Fblog%2Fcategories%2F0df78e22f1ca.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/Category.ts"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FSubscribeNewsletter.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/SubscribeNewsletter.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FSubscribeNewsletter.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/SubscribeNewsletter.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FNewsletter%2FSubscribe.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Newsletter/Subscribe.tsx"
+  },
+  "/.deco/blocks/pages-Subscribe%2520Newsletter-331299.json": {
+    "name": "Subscribe Newsletter",
+    "path": "/newsletter",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/deco-resend.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/resend.ts"
+  },
+  "/.deco/blocks/Preview%20resend%2Factions%2Femails%2Fsend.ts.json": {
+    "blockType": "actions",
+    "__resolveType": "resend/actions/emails/send.ts"
+  },
+  "/.deco/blocks/pages-Confirm%2520Newsletter-617578.json": {
+    "name": "Confirm Newsletter",
+    "path": "/confirm-newsletter",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

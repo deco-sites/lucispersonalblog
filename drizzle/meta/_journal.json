@@ -1,0 +1,34 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1717285998365,
+      "tag": "0000_cooing_moondragon",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1717286312009,
+      "tag": "0001_wet_mariko_yashida",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1717288360293,
+      "tag": "0002_supreme_shape",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1717711204811,
+      "tag": "0003_nosy_mattie_franklin",
+      "breakpoints": true
+    }
+  ]
+}
