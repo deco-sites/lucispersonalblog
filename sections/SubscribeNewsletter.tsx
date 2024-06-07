@@ -94,6 +94,7 @@ export default function NewsletterSubscriber(props: Props) {
     submitButtonText = "Subscribe",
     submissionResponse,
   } = props;
+  console.log({ props })
   return (
     <section class="relative py-16 bg-cover bg-center">
       <div class="container mx-auto px-4 flex flex-col">
