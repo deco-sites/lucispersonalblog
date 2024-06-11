@@ -5,7 +5,7 @@
   "apiKey": {
     "__resolveType": "website/loaders/secret.ts",
     "name": "RESEND_KEY",
-    "encrypted": "6382895a431874c0036357dd411e7a19434435dacecac14fdf03a5714b2bfcbba7eb416dfc9e0d779e690749fd57e5a1"
+    "encrypted": "ceb71da40831cf0862e2f00d2e63a37310ea045d5cf4da544f4a4c9c174dae840d3c0c73736167f2fc8a7022800bff36"
   },
   "emailFrom": {
     "name": "Luciano Júnior"

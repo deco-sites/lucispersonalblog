@@ -1,9 +1,9 @@
 {
   "__resolveType": "site/apps/deco/records.ts",
-  "url": "libsql://lucispersonalblog-decocx.turso.io",
   "authToken": {
     "__resolveType": "website/loaders/secret.ts",
     "name": "DATABASE_AUTH_TOKEN",
     "encrypted": "39531a493c8a584b1b999939e7fc94256ff689658ecba6d4e56b62bfbdac7bb0bd4ee20f4d7d87f8479d3cc0b5e6d09239682c5f2fac0f1a65b280be3b51ecf30f08acc529f0d4bc9490b64a7592bc7cbdae05e966c723f13ea858094fd8c9633f6ae679861da0182da5ae99a93718c68a35fcdb7effd0923790915b5b313b824ad64c0864e64b01f060b42b242f884c895a695a8a4f19115fa6cad7787d1da0e9947425fc82503e607559914f05bf1f73b979251c559afe7d8a3590b195a668d7adcac340cd658f3950c9e1a4ee87a372fd90ac690b99b4dab64ede7a39c4ee"
-  }
+  },
+  "url": "libsql://lucispersonalblog-decocx.turso.io"
 }
