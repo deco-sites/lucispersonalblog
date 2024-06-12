@@ -191,5 +191,9 @@
     "path": "/confirm-newsletter",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2F3f34739857bf.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
   }
 }
