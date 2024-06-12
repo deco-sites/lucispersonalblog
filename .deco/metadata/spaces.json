@@ -104,7 +104,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 27.042483660130717,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -125,7 +125,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 72.95751633986929,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -4720,7 +4720,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 52.20588235294118,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -4741,7 +4741,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 47.79411764705882,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -4780,7 +4780,8 @@
           },
           "id": "collections%3Acollections%2Fblog%2Fposts%2F3f34739857bf::Blog%20%2F%20Posts%20%2F%203f34739857bf::article::Edit%20Blog%20Item::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22post%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fcollections%252Fblog%252Fposts%252F3f34739857bf.json%5C%22%7D%22%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "collections%3Acollections%2Fblog%2Fposts%2F3f34739857bf::Blog%20Preview::article::Blog%20Preview::%7B%22spaceId%22%3A%22%7B%5C%22blockId%5C%22%3A%5C%22collections%2Fblog%2Fposts%2F3f34739857bf%5C%22%7D%22%7D": {
