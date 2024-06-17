@@ -121,9 +121,9 @@ export default function BlogPost({ page }: Props) {
   });
 
   return (
-    <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-28">
+    <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-12">
       <div className="w-full flex flex-col gap-12 max-w-3xl lg:mx-auto">
-        <h1 className="text-5xl font-bold">{title}</h1>
+        <h1 className="text-5xl font-bold" id="blog-post-title">{title}</h1>
         <span className="text-lg">{excerpt}</span>
         <div className="flex items-center gap-4">
           <Image
@@ -142,8 +142,11 @@ export default function BlogPost({ page }: Props) {
         </div>
       </div>
       <Image
-        className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
+        className="w-full object-cover aspect-video max-h-[600px] rounded-2xl max-w-3xl lg:mx-auto"
         src={image || ""}
+        width={1024}
+        height={576}
+        id="blog-post-image"
       />
       <div
         class={CONTENT_STYLES}

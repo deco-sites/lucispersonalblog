@@ -50,3 +50,7 @@
     display: none;
   }
 }
+
+@view-transition{
+  navigation: auto;
+}
