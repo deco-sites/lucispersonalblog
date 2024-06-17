@@ -1,5 +1,6 @@
-import { BlogPostPage, BlogPost } from "apps/blog/types.ts";
-import Image from "apps/website/components/Image.tsx";
+import { BlogPost, BlogPostPage } from "apps/blog/types.ts";
+import Image, { getSrcSet } from "apps/website/components/Image.tsx";
+import { AppContext } from "site/apps/site.ts";
 
 interface Props {
   /**
@@ -8,7 +9,8 @@ interface Props {
   page?: BlogPostPage | null;
 }
 
-const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_p]:text-lg [&_*]:mb-4 [&_a]:text-blue-600";
+const PARAGRAPH_STYLES =
+  "[&_p]:leading-[150%] [&_p]:text-lg [&_*]:mb-4 [&_a]:text-blue-600";
 const HEADING_STYLES =
   "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h3]:text-2xl [&>h3]:my-6 [&>h3]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-base [&>h6]:my-6 [&>h6]:font-bold";
 const CODE_BLOCK_STYLES =
@@ -17,9 +19,11 @@ const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
 
-const CONTENT_STYLES = `max-w-3xl mx-auto ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES} [&>ul]:list-disc [&>ul]:pl-8 [&>ol]:list-decimal [&>ol]:pl-8 [&>strong]:text-bold`;
+const CONTENT_STYLES =
+  `max-w-3xl mx-auto ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES} [&>ul]:list-disc [&>ul]:pl-8 [&>ol]:list-decimal [&>ol]:pl-8 [&>strong]:text-bold`;
 
-const DEFAULT_AVATAR = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e"
+const DEFAULT_AVATAR =
+  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e";
 
 const DEFAULT_PROPS: BlogPost = {
   title: "Blog title heading will go here",
@@ -111,8 +115,24 @@ function SocialIcons() {
   );
 }
 
+const WIDTH = 1024;
+const HEIGHT = 576;
+export function loader(props: Props, _: Request, { response }: AppContext) {
+  const image = props.page?.post.image;
+  if (image) {
+    const imgSrcs = getSrcSet(image, WIDTH, HEIGHT);
+    const getImageSrcs = imgSrcs.split(", ").map((src) => src.split(" ")[0]);
+    getImageSrcs.forEach((imgSrc) => {
+      response.headers.append("link", `<${imgSrc}>; rel=preload; as=image`);
+    });
+  }
+
+  return props;
+}
+
 export default function BlogPost({ page }: Props) {
-  const { title, authors, image, date, content, excerpt } = page?.post || DEFAULT_PROPS;
+  const { title, authors, image, date, content, excerpt } = page?.post ||
+    DEFAULT_PROPS;
 
   const formattedDate = new Date(date).toLocaleDateString("pt-BR", {
     year: "numeric",
@@ -144,16 +164,18 @@ export default function BlogPost({ page }: Props) {
       <Image
         className="w-full object-cover aspect-video max-h-[600px] rounded-2xl max-w-3xl lg:mx-auto"
         src={image || ""}
-        width={1024}
-        height={576}
         id="blog-post-image"
+        width={WIDTH}
+        height={HEIGHT}
       />
       <div
         class={CONTENT_STYLES}
         dangerouslySetInnerHTML={{
           __html: content,
         }}
-      ></div>
+      >
+      </div>
     </div>
   );
 }
+
