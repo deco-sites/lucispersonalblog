@@ -13,8 +13,6 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Include Icons and manifest */}
       <Head>
-        {/* Enable View Transitions API */}
-        <meta name="view-transition" content="same-origin" />
 
         {/* Tailwind v3 CSS file */}
         <link
@@ -25,6 +23,8 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>
+
+      <script src={`${asset("/viewTransitions.js")}`}></script>
 
       {/* Rest of Preact tree */}
       <ctx.Component />
