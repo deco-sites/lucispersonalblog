@@ -7,7 +7,13 @@
       "posts": {
         "__resolveType": "blog/loaders/BlogpostList.ts",
         "count": 12
+      },
+      "pagination": {
+        "perPage": 12
       }
+    },
+    {
+      "__resolveType": "Preview /sections/SubscribeNewsletter.tsx"
     },
     {
       "__resolveType": "Footer"
