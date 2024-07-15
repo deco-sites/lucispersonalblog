@@ -302,7 +302,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 22.258064516129032,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -323,7 +323,7 @@
               },
               {
                 "type": "stack",
-                "width": 77.74193548387096,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5024,12 +5024,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::world::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::visibility::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::visibility::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::world::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::visibility::Preview::%7B%7D"
                     },
                     "width": 70,
                     "isClosable": true,
@@ -5059,14 +5059,14 @@
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::world::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::visibility::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "world",
+          "icon": "visibility",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
           "width": 70,
-          "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::world::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2Fpages-Confirm%252520Newsletter-617578.json::Preview::visibility::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -6251,7 +6251,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 39.46078431372549,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -6272,7 +6272,7 @@
               },
               {
                 "type": "stack",
-                "width": 60.53921568627452,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
