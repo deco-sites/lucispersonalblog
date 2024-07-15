@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/f0e25d5be4e2",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Education",
+    "slug": "education"
+  }
+}
