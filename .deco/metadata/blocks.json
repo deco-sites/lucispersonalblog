@@ -211,5 +211,9 @@
   "/.deco/blocks/collections%2Fblog%2Fcategories%2Ff0e25d5be4e2.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/Category.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Ffa4ecce7aea4.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
   }
 }

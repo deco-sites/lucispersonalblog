@@ -103,7 +103,7 @@ export default function BlogPosts({
                 <div class="font-semibold">{calculateReadingTime(post.content.split(" ").length)}</div>
                 <div class="space-y-2 flex-1">
                   <h3 class="text-2xl" id={`title-${post.slug}`}>{post.title}</h3>
-                  <p class="text-base">{post.excerpt}</p>
+                  {post.excerpt?.length > 5 && <p class="text-base">{post.excerpt}</p>}
                 </div>
                 <div class="flex flex-wrap gap-2">
                   {post.categories?.map((category) => (

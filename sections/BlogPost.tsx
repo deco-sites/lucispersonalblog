@@ -124,7 +124,6 @@ export default function BlogPost({ page }: Props) {
     <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 py-12 lg:py-12">
       <div className="w-full flex flex-col gap-12 max-w-3xl lg:mx-auto">
         <h1 className="text-5xl font-bold" id="blog-post-title">{title}</h1>
-        <span className="text-lg">{excerpt}</span>
         <div className="flex items-center gap-4">
           <Image
             className="object-cover w-14 h-14 rounded-full"
