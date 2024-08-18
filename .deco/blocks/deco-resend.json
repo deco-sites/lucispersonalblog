@@ -1,13 +1,1 @@
-{
-  "__resolveType": "site/apps/deco/resend.ts",
-  "apiWrite": {},
-  "emailTo": [],
-  "apiKey": {
-    "__resolveType": "website/loaders/secret.ts",
-    "name": "RESEND_KEY",
-    "encrypted": "ceb71da40831cf0862e2f00d2e63a37310ea045d5cf4da544f4a4c9c174dae840d3c0c73736167f2fc8a7022800bff36"
-  },
-  "emailFrom": {
-    "name": "Luciano Júnior"
-  }
-}
+{"__resolveType":"site/apps/deco/resend.ts","apiWrite":{},"emailTo":[],"apiKey":{"__resolveType":"website/loaders/secret.ts","name":"RESEND_KEY","encrypted":"2edd4e511c3dda2c2788122732aa5ba2e466f67c87e02373187432fa32ac2cea9f499f79fd42035692ae5762d48ca708"},"emailFrom":{"name":"Luciano Júnior"}}
